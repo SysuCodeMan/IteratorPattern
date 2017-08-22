@@ -4,10 +4,10 @@ Created by ChrisChan on 2017/8/21.
 public class MenuItem {
     String name;
     String description;
-    String vegetarian;
+    boolean vegetarian;
     double price;
 
-    public MenuItem(String name, String description, String vegetarian, double price) {
+    public MenuItem(String name, String description, boolean vegetarian, double price) {
         this.name = name;
         this.description = description;
         this.vegetarian = vegetarian;
@@ -30,11 +30,11 @@ public class MenuItem {
         this.description = description;
     }
 
-    public String getVegetarian() {
+    public boolean getVegetarian() {
         return vegetarian;
     }
 
-    public void setVegetarian(String vegetarian) {
+    public void setVegetarian(boolean vegetarian) {
         this.vegetarian = vegetarian;
     }
 
